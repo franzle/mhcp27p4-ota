@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MHCP27-P4 — firmware updates</title>
+<style>
+  :root{color-scheme:light dark}
+  body{font-family:-apple-system,system-ui,sans-serif;margin:0;padding:20px;
+       max-width:640px;margin-inline:auto;line-height:1.4}
+  h1{font-size:1.4rem}
+  .card{border:1px solid #8884;border-radius:12px;padding:16px;margin:14px 0}
+  .card.latest{border-color:#2e86ff;border-width:2px}
+  .badge{display:inline-block;background:#2e86ff;color:#fff;border-radius:999px;
+         font-size:.72rem;padding:2px 10px;margin-left:8px;vertical-align:middle}
+  .ver{font-size:1.15rem;font-weight:600}
+  .meta{color:#888;font-size:.85rem;margin:6px 0 12px}
+  a.dl{display:block;text-align:center;background:#2e86ff;color:#fff;
+       text-decoration:none;padding:14px;border-radius:10px;font-weight:600;font-size:1.05rem}
+  #next{display:none;margin-top:26px;border-top:1px solid #8883;padding-top:20px}
+  #next.show{display:block}
+  #next h2{font-size:1.15rem;margin:0 0 6px}
+  #next p{color:#888;font-size:.92rem;margin:.35em 0}
+  #next .sub{color:#888;font-size:.9rem;margin:0 0 14px}
+  .step{border:1px solid #8884;border-radius:10px;padding:12px;margin:12px 0;display:flex;gap:12px;align-items:center}
+  .step.col{display:block}
+  .step .txt b{font-size:1rem}
+  .step .txt span{display:block;color:#888;font-size:.88rem;margin-top:2px}
+  .step .ico{flex:0 0 auto}
+  .cardmock{display:block;width:100%;max-width:320px;margin:12px auto 0}
+  @keyframes pulse{0%,100%{opacity:.2}50%{opacity:1}}
+</style>
+<h1>MHCP27-P4 — firmware updates</h1>
+<div id="list">
+<div class="card latest"><span class="ver">v1.0.4</span><span class="badge">latest</span>
+<div class="meta">2026-09-25T08:20:12Z · 2.7 MB</div>
+<a class="dl" href="firmware/1.0.4-5796343-20260925-082012/mhcp27p4.bin" download="mhcp27p4-1.0.4.bin" onclick="return startDownload(event,this)">Download .bin</a></div>
+<div class="card"><span class="ver">v1.0.3</span>
+<div class="meta">2026-08-27T09:52:15Z · 2.5 MB</div>
+<a class="dl" href="firmware/1.0.3-ad2a59c-20260827-095215/mhcp27p4.bin" download="mhcp27p4-1.0.3.bin" onclick="return startDownload(event,this)">Download .bin</a></div>
+<div class="card"><span class="ver">v1.0.2</span>
+<div class="meta">2026-08-27T07:29:10Z · 2.4 MB</div>
+<a class="dl" href="firmware/1.0.2-420a167-20260827-072910/mhcp27p4.bin" download="mhcp27p4-1.0.2.bin" onclick="return startDownload(event,this)">Download .bin</a></div>
+<div class="card"><span class="ver">v1.0.1</span>
+<div class="meta">2026-08-04T06:44:36Z · 2.4 MB</div>
+<a class="dl" href="firmware/1.0.1-9d1b4b2-20260804-064436/mhcp27p4.bin" download="mhcp27p4-1.0.1.bin" onclick="return startDownload(event,this)">Download .bin</a></div>
+</div>
+<div id="next">
+  <h2>✓ File downloaded</h2>
+  <p class="sub">Three steps left to update the panel.</p>
+  <div class="step">
+    <svg class="ico" width="56" height="56" viewBox="0 0 56 56" role="img" aria-label="save the file to your phone">
+      <rect x="14" y="4" width="28" height="48" rx="5" fill="none" stroke="#2e86ff" stroke-width="2.5"/>
+      <rect x="22" y="8" width="12" height="2.4" rx="1.2" fill="#2e86ff"/>
+      <path d="M28 22 L28 38 M28 38 L21 31 M28 38 L35 31" fill="none" stroke="#2e86ff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M20 44 h16" stroke="#2e86ff" stroke-width="2.6" stroke-linecap="round"/>
+    </svg>
+    <div class="txt"><b>1. Save the file</b><span>Keep it on your phone (Downloads / Files).</span></div>
+  </div>
+  <div class="step col">
+    <div class="txt"><b>2. Press the gold "Next"</b><span>Back on the panel.</span></div>
+    <svg class="cardmock" viewBox="0 0 320 132" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Panel Step 1 card: QR on the left, Next and Cancel buttons on the right">
+      <rect x="2" y="2" width="316" height="128" rx="14" fill="#1c2330" stroke="#3a4356"/>
+      <rect x="16" y="26" width="80" height="80" rx="8" fill="#fff" stroke="#e8b849" stroke-width="5"/>
+      <g fill="#111">
+        <rect x="26" y="36" width="18" height="18"/><rect x="31" y="41" width="8" height="8" fill="#fff"/>
+        <rect x="68" y="36" width="18" height="18"/><rect x="73" y="41" width="8" height="8" fill="#fff"/>
+        <rect x="26" y="78" width="18" height="18"/><rect x="31" y="83" width="8" height="8" fill="#fff"/>
+        <rect x="52" y="40" width="6" height="6"/><rect x="60" y="52" width="6" height="6"/><rect x="52" y="66" width="6" height="6"/><rect x="70" y="72" width="8" height="8"/><rect x="56" y="82" width="6" height="6"/>
+      </g>
+      <text x="120" y="42" fill="#e8b849" font-size="30" font-weight="700" font-family="sans-serif">1/3</text>
+      <text x="176" y="42" fill="#e8b849" font-size="16" font-family="sans-serif">Download</text>
+      <rect x="120" y="78" width="86" height="34" rx="17" fill="#e8b849"/>
+      <text x="163" y="100" text-anchor="middle" fill="#1c2330" font-size="15" font-weight="700" font-family="sans-serif">Next</text>
+      <rect x="216" y="78" width="86" height="34" rx="17" fill="#2e86ff"/>
+      <text x="259" y="100" text-anchor="middle" fill="#fff" font-size="15" font-weight="700" font-family="sans-serif">Cancel</text>
+      <rect x="114" y="72" width="98" height="46" rx="23" fill="none" stroke="#e8b849" stroke-width="3" style="animation:pulse 1.2s ease-in-out infinite"/>
+    </svg>
+  </div>
+  <div class="step col">
+    <div style="display:flex;gap:12px;align-items:center">
+      <svg class="ico" width="46" height="46" viewBox="0 0 52 52" role="img" aria-label="open your camera">
+        <rect x="5" y="15" width="42" height="29" rx="5" fill="none" stroke="#2e86ff" stroke-width="2.5"/>
+        <path d="M17 15 l3-5 h12 l3 5" fill="none" stroke="#2e86ff" stroke-width="2.5" stroke-linejoin="round"/>
+        <circle cx="26" cy="30" r="8.5" fill="none" stroke="#2e86ff" stroke-width="2.5"/>
+      </svg>
+      <div class="txt"><b>3. Scan the blue QR</b><span>Open your camera on the blue code that appears on the panel — it joins the panel's Wi-Fi.</span></div>
+    </div>
+    <svg class="cardmock" viewBox="0 0 320 132" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Panel Step 2 card: Connect, blue QR on the right">
+      <rect x="2" y="2" width="316" height="128" rx="14" fill="#1c2330" stroke="#3a4356"/>
+      <text x="18" y="42" fill="#60a8f8" font-size="30" font-weight="700" font-family="sans-serif">2/3</text>
+      <text x="74" y="42" fill="#60a8f8" font-size="16" font-family="sans-serif">Connect</text>
+      <rect x="18" y="78" width="90" height="34" rx="17" fill="#2e86ff"/>
+      <text x="63" y="100" text-anchor="middle" fill="#fff" font-size="15" font-weight="700" font-family="sans-serif">Cancel</text>
+      <rect x="224" y="26" width="80" height="80" rx="8" fill="#fff" stroke="#60a8f8" stroke-width="5"/>
+      <g fill="#111">
+        <rect x="234" y="36" width="18" height="18"/><rect x="239" y="41" width="8" height="8" fill="#fff"/>
+        <rect x="276" y="36" width="18" height="18"/><rect x="281" y="41" width="8" height="8" fill="#fff"/>
+        <rect x="234" y="78" width="18" height="18"/><rect x="239" y="83" width="8" height="8" fill="#fff"/>
+        <rect x="260" y="40" width="6" height="6"/><rect x="268" y="52" width="6" height="6"/><rect x="260" y="66" width="6" height="6"/><rect x="278" y="72" width="8" height="8"/><rect x="264" y="82" width="6" height="6"/>
+      </g>
+    </svg>
+  </div>
+  <p>Once connected, the panel confirms it and shows one last QR to open the upload page.</p>
+</div>
+<script>
+function showNext(){var l=document.getElementById('list');if(l)l.style.display='none';document.getElementById('next').classList.add('show');window.scrollTo({top:0,behavior:'smooth'});}
+function startDownload(e,el){
+  if(!window.fetch||!window.ReadableStream){setTimeout(showNext,400);return true;}
+  e.preventDefault();
+  if(el.getAttribute('data-busy'))return false;el.setAttribute('data-busy','1');
+  var url=el.getAttribute('href'),name=el.getAttribute('download')||'mhcp27p4.bin',orig=el.textContent;
+  var done=function(){el.textContent=orig;el.removeAttribute('data-busy');showNext();};
+  var native=function(){var a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();done();};
+  fetch(url).then(function(res){
+    if(!res.ok||!res.body)throw 0;
+    var enc=res.headers.get('Content-Encoding');
+    var total=enc?0:parseInt(res.headers.get('Content-Length')||'0',10),reader=res.body.getReader(),chunks=[],got=0;
+    return (function pump(){return reader.read().then(function(r){
+      if(r.done)return;chunks.push(r.value);got+=r.value.length;
+      el.textContent=total>0?('Downloading '+Math.min(100,Math.round(got/total*100))+'%'):('Downloading '+(got/1048576).toFixed(1)+' MB');
+      return pump();});})().then(function(){
+      var u=URL.createObjectURL(new Blob(chunks,{type:'application/octet-stream'})),a=document.createElement('a');
+      a.href=u;a.download=name;document.body.appendChild(a);a.click();
+      setTimeout(function(){URL.revokeObjectURL(u);a.remove();},1000);done();});
+  }).catch(native);
+  return false;
+}
+</script>
